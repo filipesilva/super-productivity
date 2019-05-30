@@ -9,5 +9,5 @@ import { MatInput } from '@angular/material';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class InputDurationFormlyComponent extends FieldType {
-  @ViewChild(MatInput) formFieldControl: MatInput;
+  @ViewChild(MatInput, {static: true}) formFieldControl: MatInput;
 }

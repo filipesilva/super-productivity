@@ -9,7 +9,7 @@ import { MatInput } from '@angular/material';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class KeyboardInputComponent extends FieldType {
-  @ViewChild(MatInput) formFieldControl: MatInput;
+  @ViewChild(MatInput, {static: true}) formFieldControl: MatInput;
 
   get type() {
     return this.to.type || 'text';

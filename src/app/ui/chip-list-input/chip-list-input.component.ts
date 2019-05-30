@@ -51,8 +51,8 @@ export class ChipListInputComponent {
       : this.suggestions_.filter(suggestion => !this._modelIds || !this._modelIds.includes(suggestion.id)))
   );
 
-  @ViewChild('inputElRef') fruitInput: ElementRef<HTMLInputElement>;
-  @ViewChild('autoElRef') matAutocomplete: MatAutocomplete;
+  @ViewChild('inputElRef', {static: true}) fruitInput: ElementRef<HTMLInputElement>;
+  @ViewChild('autoElRef', {static: true}) matAutocomplete: MatAutocomplete;
 
   private _modelIds: string[] = [];
 

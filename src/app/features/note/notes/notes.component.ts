@@ -21,7 +21,7 @@ export class NotesComponent implements OnInit, OnDestroy {
   isDragOver = false;
   dragEnterTarget: HTMLElement;
 
-  @ViewChild('buttonEl') buttonEl: MatButton;
+  @ViewChild('buttonEl', {static: true}) buttonEl: MatButton;
   private _subs = new Subscription();
 
   constructor(
