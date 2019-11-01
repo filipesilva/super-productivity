@@ -43,7 +43,7 @@ You can use the '--force' option to ignore incompatible peer dependencies and in
 ```
 
 - seems tslib is a new peerdep, we have a migration but the peerdep check happens before migrations, so users will always need to do `--force`
-- these warnings should not have stopped the update process, the missing ones shouldn't stop and the incompatible ones should match with `--next`
+- these warnings should not have stopped the update process, the missing ones shouldn't stop and the incompatible ones should match with `--next` (AI: Filipe)
 - migration fails on ngcc
 
 ```
