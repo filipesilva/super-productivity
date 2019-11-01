@@ -273,3 +273,4 @@ git HEAD was at 85f08a4d93e684566f751e38e2a2feffe0194cd9 before migrations.
 * 73e3ee1d Angular CLI update
 * a06b9c06 update steps
 ```
+- charles thinks we should remove the `git HEAD` message
