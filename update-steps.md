@@ -263,5 +263,13 @@ git HEAD was at 85f08a4d93e684566f751e38e2a2feffe0194cd9 before migrations.
 ×  Migration failed. See above for further details.
 ```
 
-- migration message about `git HEAD` doesn't sound very actionable for a lot of people
 - the ngcc postinstall in `package.json` hook was left uncommited
+- migration message about `git HEAD` doesn't sound very actionable for a lot of people
+- the `git HEAD` message is also incorrect, the commit before migrations was another one:
+```
+* 558e5436 (HEAD -> update-9) update steps
+* ec5e3201 migrate workspace for @angular/core@9.0.0-beta
+* 85f08a4d migrate workspace for @angular/cli@9.0.0-beta.0
+* 73e3ee1d Angular CLI update
+* a06b9c06 update steps
+```
