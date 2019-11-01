@@ -7,20 +7,20 @@
   resolved "https://registry.yarnpkg.com/7zip-bin/-/7zip-bin-5.0.3.tgz#bc5b5532ecafd923a61f2fb097e3b108c0106a3f"
   integrity sha512-GLyWIFBbGvpKPGo55JyRZAo4lVbnBiD52cKlw/0Vt+wnmKvWJkpZvsjVoaIolyBXDeAQKSicRtqFNPem9w0WYA==
 
+"@angular-devkit/architect@0.803.17":
+  version "0.803.17"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.803.17.tgz#38bc81cf7870338edfebb6223563ba5ec9693308"
+  integrity sha512-QbuWJhjh78Pb/9574OIjR38hhJCRBd0BtdrRRdTjP7By6liXURnA/OH6iZ9o1jA8It1NvoJQtM2flr8dQf83Mw==
+  dependencies:
+    "@angular-devkit/core" "8.3.17"
+    rxjs "6.4.0"
+
 "@angular-devkit/architect@0.803.4":
   version "0.803.4"
   resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.803.4.tgz#d1f058123ca33e77b674e9c1080a0c8be7aa670c"
   integrity sha512-Ek+xb9GfzHLbD+ATmupbzTSNFGddkH6dbb36cB6gme+vnlBVfXP0dxOg5lRKZoUIFJyREl9jSrA5zUhVwXaoVg==
   dependencies:
     "@angular-devkit/core" "8.3.4"
-    rxjs "6.4.0"
-
-"@angular-devkit/architect@0.803.8":
-  version "0.803.8"
-  resolved "https://registry.yarnpkg.com/@angular-devkit/architect/-/architect-0.803.8.tgz#5f068462ae7c1807564f45e302179887dd36042a"
-  integrity sha512-eenVmiFz7CXHkPT0sboaqHHQ48y43racZP648VMuvPJK5wHZhdwyfe5Whz4qnuEHca1fB0FbVDKP10okwVYfPQ==
-  dependencies:
-    "@angular-devkit/core" "8.3.8"
     rxjs "6.4.0"
 
 "@angular-devkit/build-angular@0.803.4":
@@ -128,6 +128,17 @@
     rxjs "6.3.3"
     source-map "0.7.3"
 
+"@angular-devkit/core@8.3.17":
+  version "8.3.17"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-8.3.17.tgz#8335db51d2155c3303a2d8c0ffac63cc28dca84e"
+  integrity sha512-cR2H/7OxxqagwGfzxwNWDOYN4QpOZ56Fei9JED/2p/K/5UDAowl20o3qP9mTfia/lEhFeyjMBcM8gsHxhJNYJQ==
+  dependencies:
+    ajv "6.10.2"
+    fast-json-stable-stringify "2.0.0"
+    magic-string "0.25.3"
+    rxjs "6.4.0"
+    source-map "0.7.3"
+
 "@angular-devkit/core@8.3.4":
   version "8.3.4"
   resolved "https://registry.yarnpkg.com/@angular-devkit/core/-/core-8.3.4.tgz#cdd0593ca4dc5eaff2adc77bda9aed1327dbb405"
@@ -166,6 +177,14 @@
     "@angular-devkit/core" "7.3.9"
     rxjs "6.3.3"
 
+"@angular-devkit/schematics@8.3.17":
+  version "8.3.17"
+  resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-8.3.17.tgz#190912090e8b765b55bc5063883b726fb7913972"
+  integrity sha512-1ttzYGnw5Ux7Nfr/TGyWx3C/rarq5l+dn+5SpKof/8ctvQU1gJaswF492ngPs/jDjaPq5MucKYoX+wTUJHnUhg==
+  dependencies:
+    "@angular-devkit/core" "8.3.17"
+    rxjs "6.4.0"
+
 "@angular-devkit/schematics@8.3.8":
   version "8.3.8"
   resolved "https://registry.yarnpkg.com/@angular-devkit/schematics/-/schematics-8.3.8.tgz#7e4840509c2ca922b90ca2b33111c1941450aad5"
@@ -190,16 +209,16 @@
   optionalDependencies:
     parse5 "^5.0.0"
 
-"@angular/cli@^8.3.4":
-  version "8.3.8"
-  resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-8.3.8.tgz#a3b1a4ab1822469f3013ca744e6d4a5818322cbe"
-  integrity sha512-JmumKB21XKyQwe3fSeaaEGTWuv39mtrNQ4CWIXzLKY+oWdpBy+G82JRjXM3OMLmKGrmxiAjTc6kP0oRYaq25JA==
+"@angular/cli@^8.3.15":
+  version "8.3.17"
+  resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-8.3.17.tgz#f8b2457e7eb6b97627de95b8ded7ce9215fbb2b2"
+  integrity sha512-1R4IlPnrm6B9drhrCHTu9fBFIqCvOXK1zqYLsdobz6KfdkBcLSFqRqRfgEqADLChkxMo4tedtsftkuqY5Xinrg==
   dependencies:
-    "@angular-devkit/architect" "0.803.8"
-    "@angular-devkit/core" "8.3.8"
-    "@angular-devkit/schematics" "8.3.8"
-    "@schematics/angular" "8.3.8"
-    "@schematics/update" "0.803.8"
+    "@angular-devkit/architect" "0.803.17"
+    "@angular-devkit/core" "8.3.17"
+    "@angular-devkit/schematics" "8.3.17"
+    "@schematics/angular" "8.3.17"
+    "@schematics/update" "0.803.17"
     "@yarnpkg/lockfile" "1.1.0"
     ansi-colors "4.1.1"
     debug "^4.1.1"
@@ -210,6 +229,7 @@
     open "6.4.0"
     pacote "9.5.5"
     read-package-tree "5.3.1"
+    rimraf "3.0.0"
     semver "6.3.0"
     symbol-observable "1.2.0"
     universal-analytics "^0.4.20"
@@ -1070,13 +1090,13 @@
     "@angular-devkit/schematics" "7.0.7"
     typescript "3.1.6"
 
-"@schematics/angular@8.3.8", "@schematics/angular@^8.0.1":
-  version "8.3.8"
-  resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-8.3.8.tgz#9b815c505517d5b23da0ebec3e7c0a8b4ed11b95"
-  integrity sha512-TOueA7gfQ5P7iDS593EBtLtqqgl6Pvg6snWqbMaW74VUxd5euAuPMPKkoJPddKF+cWjGYZgF09tp7G0kbuLGqw==
+"@schematics/angular@8.3.17":
+  version "8.3.17"
+  resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-8.3.17.tgz#e5b7e904c2af8e98608d5b4f0cf53c4e44c53da7"
+  integrity sha512-Ot++j7vpEBKUD+D6eQxIJto+PYR2HPR9hmBoshZ2nt1/mU3OPEpIMIO/OBnbVtGmuzKXdq2n2NvbPtnhlxWplA==
   dependencies:
-    "@angular-devkit/core" "8.3.8"
-    "@angular-devkit/schematics" "8.3.8"
+    "@angular-devkit/core" "8.3.17"
+    "@angular-devkit/schematics" "8.3.17"
 
 "@schematics/angular@^7.3.5":
   version "7.3.9"
@@ -1087,13 +1107,21 @@
     "@angular-devkit/schematics" "7.3.9"
     typescript "3.2.4"
 
-"@schematics/update@0.803.8":
-  version "0.803.8"
-  resolved "https://registry.yarnpkg.com/@schematics/update/-/update-0.803.8.tgz#56252df2d194bd9ff5582ab7975325a637380a0e"
-  integrity sha512-1gf59IbRPsOeoo997B+tHJ1YlCIHUCUqiYDCgxcoV+4EjYtCLNC/9cWIehZ9adqan9o6o1ma7MJznVNzvFyCSQ==
+"@schematics/angular@^8.0.1":
+  version "8.3.8"
+  resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-8.3.8.tgz#9b815c505517d5b23da0ebec3e7c0a8b4ed11b95"
+  integrity sha512-TOueA7gfQ5P7iDS593EBtLtqqgl6Pvg6snWqbMaW74VUxd5euAuPMPKkoJPddKF+cWjGYZgF09tp7G0kbuLGqw==
   dependencies:
     "@angular-devkit/core" "8.3.8"
     "@angular-devkit/schematics" "8.3.8"
+
+"@schematics/update@0.803.17":
+  version "0.803.17"
+  resolved "https://registry.yarnpkg.com/@schematics/update/-/update-0.803.17.tgz#e2173dc0236b4fb93d56a86aea312147e4e854ee"
+  integrity sha512-42CqIcm0i1BfBXYm6YuE8Q6kEEb0ATYiPYJQTgmb+bZSF2Sl9eAzPBaackW2EwVK1JP3Rdyl2S31OwGvgAk6xA==
+  dependencies:
+    "@angular-devkit/core" "8.3.17"
+    "@angular-devkit/schematics" "8.3.17"
     "@yarnpkg/lockfile" "1.1.0"
     ini "1.3.5"
     pacote "9.5.5"
@@ -8852,6 +8880,13 @@ rimraf@2, rimraf@^2.2.8, rimraf@^2.5.2, rimraf@^2.5.4, rimraf@^2.6.0, rimraf@^2.
   version "2.7.1"
   resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-2.7.1.tgz#35797f13a7fdadc566142c29d4f07ccad483e3ec"
   integrity sha512-uWjbaKIK3T1OSVptzX7Nl6PvQ3qAGtKEtVRjRuazjfL3Bx5eI409VZSqgND+4UNnmzLVdPj9FqFJNPqBZFve4w==
+  dependencies:
+    glob "^7.1.3"
+
+rimraf@3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/rimraf/-/rimraf-3.0.0.tgz#614176d4b3010b75e5c390eb0ee96f6dc0cebb9b"
+  integrity sha512-NDGVxTsjqfunkds7CqsOiEnxln4Bo7Nddl3XhS4pXg5OzwkLqJ971ZVAAnB+DDLnF76N+VnDEiBHaVV8I06SUg==
   dependencies:
     glob "^7.1.3"
 
