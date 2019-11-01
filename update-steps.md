@@ -42,8 +42,8 @@ Peer dependency warnings when installing dependencies means that those dependenc
 You can use the '--force' option to ignore incompatible peer dependencies and instead address these warnings later.
 ```
 
-- seems tslib is a new peerdep, we have a migration but the peerdep check happens before migrations, so users will always need to do `--force`
-- these warnings should not have stopped the update process, the missing ones shouldn't stop and the incompatible ones should match with `--next` (AI: Filipe)
+- OBS: seems tslib is a new peerdep, we have a migration but the peerdep check happens before migrations, so users will always need to do `--force`
+- OBS: these warnings should not have stopped the update process, the missing ones shouldn't stop and the incompatible ones should match with `--next` (AI: Filipe)
 - migration fails on ngcc
 
 ```
@@ -264,8 +264,8 @@ git HEAD was at 85f08a4d93e684566f751e38e2a2feffe0194cd9 before migrations.
 ```
 
 - the ngcc postinstall in `package.json` hook was left uncommited
-- migration message about `git HEAD` doesn't sound very actionable for a lot of people
-- the `git HEAD` message is also incorrect, the commit before migrations was another one:
+- OBS: migration message about `git HEAD` doesn't sound very actionable for a lot of people
+- OBS: the `git HEAD` message is also incorrect, the commit before migrations was another one:
 ```
 * 558e5436 (HEAD -> update-9) update steps
 * ec5e3201 migrate workspace for @angular/core@9.0.0-beta
@@ -273,4 +273,4 @@ git HEAD was at 85f08a4d93e684566f751e38e2a2feffe0194cd9 before migrations.
 * 73e3ee1d Angular CLI update
 * a06b9c06 update steps
 ```
-- charles thinks we should remove the `git HEAD` message
+- OBS: charles thinks we should remove the `git HEAD` message (AI: Filipe)
