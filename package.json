@@ -22,6 +22,7 @@
     "start": "yarn electron:build && cross-env NODE_ENV=DEV electron .",
     "startFrontend": "ng serve",
     "serveProd": "node --max_old_space_size=4096 ./node_modules/@angular/cli/bin/ng serve --prod",
+    "buildFrontendDev": "node --max_old_space_size=4096 ./node_modules/@angular/cli/bin/ng build --aot",
     "buildFrontend": "node --max_old_space_size=4096 ./node_modules/@angular/cli/bin/ng build --aot --prod",
     "buildFrontendElectron": "yarn preCheck && node --max_old_space_size=4096 ./node_modules/@angular/cli/bin/ng build --aot --prod --base-href=''",
     "buildAllElectron": "yarn buildFrontendElectron && yarn electron:build",
