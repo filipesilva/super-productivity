@@ -75,13 +75,13 @@
     "electron-log": "^3.0.1",
     "googleapis": "^40.0.0",
     "jira-client-fork": "^4.2.1",
-    "moment": "^2.24.0"
-  ,    "tslib": "^1.10.0"
-},
+    "moment": "^2.24.0",
+    "tslib": "^1.10.0"
+  },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.900.0-rc.2",
     "@angular/animations": "^9.0.0-rc.2",
-    "@angular/cdk": "^8.2.0",
+    "@angular/cdk": "^9.0.0-rc.1",
     "@angular/cli": "^9.0.0-rc.2",
     "@angular/common": "^9.0.0-rc.2",
     "@angular/compiler": "^9.0.0-rc.2",
@@ -89,8 +89,8 @@
     "@angular/core": "^9.0.0-rc.2",
     "@angular/forms": "^9.0.0-rc.2",
     "@angular/language-service": "^9.0.0-rc.2",
-    "@angular/material": "^8.2.0",
-    "@angular/material-moment-adapter": "^8.2.0",
+    "@angular/material": "^9.0.0-rc.1",
+    "@angular/material-moment-adapter": "^9.0.0-rc.1",
     "@angular/platform-browser": "^9.0.0-rc.2",
     "@angular/platform-browser-dynamic": "^9.0.0-rc.2",
     "@angular/platform-server": "^9.0.0-rc.2",
